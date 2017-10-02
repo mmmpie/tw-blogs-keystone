@@ -326,5 +326,20 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
+  /**
+   * Executes a block if modulo operation returns 0.
+   *
+   * @param  {mixed}  num    The dividend
+   * @param  {mixed}  mod    The divisor
+   * @param  {html}   block  html block to evaluate if true
+   */
+  _helpers.moduloIf = function(num, mod, block) {
+    if (parseInt(num) % parseInt(mod) === 0) {
+      return block.fn(this);
+    } else {
+			return block.inverse(this);
+		}
+	};
+
 	return _helpers;
 };

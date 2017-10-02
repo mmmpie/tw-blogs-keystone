@@ -5697,13 +5697,6 @@ nav.navbar-tw {
 
 .site-footer {
   color: #FFF; }
-  .site-footer section.design-labs {
-    background-color: #455A64;
-    padding: 2rem 0; }
-    .site-footer section.design-labs::after {
-      display: block;
-      clear: both;
-      content: ""; }
   .site-footer nav.site-footer-nav {
     text-align: center;
     background-color: #DCE2E6;
@@ -5732,14 +5725,29 @@ main {
 main.nopad {
   padding-top: 0; }
 
+.background-white {
+  background: #fff; }
+
+.background-cyan {
+  background: #DCE2E6; }
+
 .background-gradient-blue {
   background: linear-gradient(15deg, #016A9C 0%, #02A3CB 50%) !important; }
 
 .background-blue {
   background: #02A3CB; }
 
+.background-gray {
+  background: #455A64; }
+
 .background-getty1 {
   background: #D9E2F3 url("/assets/svg/getty-598310317-2560x650.jpg") 5% 50% no-repeat; }
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
 
 h1, h2, h3, h4, h5, h6, h7, h8 {
   font-weight: 300; }

@@ -24,7 +24,7 @@ exports = module.exports = function (req, res) {
 			.populate('author categories');
 
 		q.exec(function (err, results) {
-			console.log('we found produts.', results);
+			// console.log('we found produts.', results);
 			locals.data.products = results;
 			next(err);
 		});

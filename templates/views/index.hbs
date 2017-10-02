@@ -2,53 +2,56 @@
 
 {{> "toolbar"}}
 
-<main id="site-main" role="main" class="container nopad">
+{{!-- Hero
+			Loads a specific blob of content.
+--}}
+<div class="jumbotron jumbotron-fluid background-gradient-blue mb-0">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col col-lg-8" >
+				<h4 class="display-3 text-white">It's a whole new Toad World!</h4>
+				<p class="lead text-white">
+					We’re not sure if you noticed, we’ve got some snazzy new digs here.
+					But don’t worry, you can still download our products and find
+					helpful content.
+				</p>
+				<hr class="my-4">
+				<p class="lead">
+					<a class="btn btn-dark btn-lg" href="/downloads" role="button">Download Products</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 
-  {{!-- Hero
-        Loads a specific blob of content.
-  --}}
-  <div class="row">
-    <div class="col jumbotron jumbotron-fluid background-gradient-blue">
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-6" >
-						<h4 class="display-4 text-white">It's a whole new Toad World!</h4>
-						<p class="lead text-white">
-							We’re not sure if you noticed, we’ve got some snazzy new digs here.
-							But don’t worry, you can still download our products and find
-							helpful content.
-						</p>
-						<hr class="my-4">
-						<p class="lead">
-							<a class="btn btn-dark btn-lg" href="/downloads" role="button">Download Products</a>
-						</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  {{!-- Homepage Specific blob's --}}
-  <div class="card-deck mb-4">
-		{{#each data.products}}
-			<div class="card">
-				<img class="card-img-top" src="{{screenshot.image.url}}">
-				<div class="card-body">
-					<h4 class="card-title">{{title}}</h4>
-					<div class="card-text">
+{{!-- Homepage Specific blob's --}}
+{{#each data.products}}
+<div class="jumbotron jumbotron-fluid mb-0 {{#moduloIf @index 2}}background-white{{else}}background-cyan{{/moduloIf}}">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			{{#moduloIf @index 2}}
+				<div class="col col-lg-6">
+					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}">
+				</div>
+				<div class="col col-lg-6 vertical-center">
+					<div class="center-height">
+						<h4 class="display-4">{{title}}</h4>
 						{{{screenshot.content.html}}}
 					</div>
-					{{!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
-					<p class="card-text"><small class="text-muted">Last updated {{date updatedAt timeago="true"}}</small></p>
 				</div>
-			</div>
-		{{/each}}
+			{{else}}
+				<div class="col col-lg-6 vertical-center">
+					<div class="center-height">
+						<h4 class="display-4">{{title}}</h4>
+						{{{screenshot.content.html}}}
+					</div>
+				</div>
+				<div class="col col-lg-6">
+					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}">
+				</div>
+			{{/moduloIf}}
+		</div>
+	</div>
+</div>
+{{/each}}
 
-
-
-
-
-  </div>
-
-</main>

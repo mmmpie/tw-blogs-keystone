@@ -115,7 +115,7 @@ exports.create = {
 			version: '1.0.1',
 			state: 'published',
 			author: 'admin',
-			featured: false,
+			featured: true,
 			hero: {
 				image: {
 					public_id: 'h0jy4gw7xhaipuanctsz',
