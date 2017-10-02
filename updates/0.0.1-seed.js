@@ -60,7 +60,89 @@ exports.create = {
 					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg',
 					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg'
 				},
+				content: 'Lightweight, flexible toolset for the development and management of MySQL databases.'
+			},
+			platforms: [
+				'windows', 'macos'
+			],
+			databases: [
+				'mysql'
+			]
+		},
+		{
+			title: 'Toad for Oracle',
+			version: '1.0.0',
+			state: 'published',
+			author: 'admin',
+			featured: true,
+			hero: {
+				image: {
+					public_id: 'h0jy4gw7xhaipuanctsz',
+					version: 1506966158,
+					signature: '63edf5d00af6888cef2b4445b8d2b6ae86527be0',
+					width: 2560,
+					height: 650,
+					format: 'jpg',
+					resource_type: 'image',
+					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg',
+					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg'
+				},
 				content: '# Title\nSome nifty content.'
+			},
+			screenshot: {
+				image: {
+					public_id: 'tz6huyaq7xwnddcdsg7g',
+					version: 1506966329,
+					signature: '4204109491e1a68a2ac9f5b2b446df760f30806e',
+					width: 537,
+					height: 376,
+					format: 'svg',
+					resource_type: 'image',
+					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg',
+					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg'
+				},
+				content: 'Save time, improve performance and reduce risks with the leading database development, administration and optimization software.'
+			},
+			platforms: [
+				'windows', 'macos'
+			],
+			databases: [
+				'mysql'
+			]
+		},
+		{
+			title: 'Toad for IBM DB2',
+			version: '1.0.1',
+			state: 'published',
+			author: 'admin',
+			featured: false,
+			hero: {
+				image: {
+					public_id: 'h0jy4gw7xhaipuanctsz',
+					version: 1506966158,
+					signature: '63edf5d00af6888cef2b4445b8d2b6ae86527be0',
+					width: 2560,
+					height: 650,
+					format: 'jpg',
+					resource_type: 'image',
+					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg',
+					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg'
+				},
+				content: '# Title\nSome nifty content.'
+			},
+			screenshot: {
+				image: {
+					public_id: 'tz6huyaq7xwnddcdsg7g',
+					version: 1506966329,
+					signature: '4204109491e1a68a2ac9f5b2b446df760f30806e',
+					width: 537,
+					height: 376,
+					format: 'svg',
+					resource_type: 'image',
+					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg',
+					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966329/tz6huyaq7xwnddcdsg7g.svg'
+				},
+				content: 'Develop and manage DB2 LUW & z/OS databases with less time and effort.'
 			},
 			platforms: [
 				'windows', 'macos'
