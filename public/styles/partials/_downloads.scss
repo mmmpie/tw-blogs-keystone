@@ -1,0 +1,160 @@
+
+
+
+// Global (outside wrapper)
+
+
+.page-downloads {
+  $primary-green: $green;
+
+  // Prodcut Rows (mods)
+
+  .product-mod {
+    margin: 15px 0;
+    padding: 15px 0;
+    border-bottom: solid 1px #eee;
+    & > div:first-child {
+      text-align: center;
+    }
+  }
+
+  .modal-title {
+    background: none !important;
+  }
+
+  // Feature Matrix
+
+  .table.feature-matrix {
+    display: table;
+    .matrix-header {
+      background: #FFF;
+    }
+    th {
+      position: relative;
+      padding-bottom: 70px;
+      border: none;
+      font-weight: normal;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    .title-cell {
+      background: url('http://stage.toadworld.com/cfs-file/__key/communityserver-components-sitefiles/toad.png') no-repeat bottom center;
+      background-size: 40%;
+    }
+    td {
+      padding-left: 15px;
+    }
+    td:first-child {
+      padding-left: 0;
+    }
+    th.free-trial-column {
+      border-top: solid 5px $primary-green;
+    }
+    .free-trial-column {
+      background-color: #f6f6f6;
+    }
+
+    .martix-features {
+      td {
+        padding-left: 15px;
+        img {
+          margin-left: 15px;
+          // todo move circles
+        }
+      }
+    }
+    .matrix-cta {
+      position: absolute;
+      bottom: 15px;
+      .btn {
+        display: block;
+        margin-top:5px;
+      }
+    }
+  }
+
+  // Filter
+
+  .product-filters {
+    background: #f6f6f6;
+    padding: 8px 25px;
+    margin-bottom: 25px;
+    ul {
+      margin:0;
+    }
+    .nav-link {
+      color: #444;
+      border-radius: 2px;
+    }
+    .nav-link.active {
+      background: #444;
+      color: #FFF;
+    }
+    .nav-item-label {
+      font-weight: bold;
+    }
+    .nav-item-reset {
+      background-color: #DDD;
+    }
+    .nav-link-label {
+      display: block;
+      padding: .5em 1em .5em 0;
+    }
+  }
+
+  .btn {
+    border-radius: 2px;
+    white-space: normal;
+  }
+  .btn.btn-primary {
+    display: inline-block;
+    background-color: $primary-green;
+    border-color: darken($primary-green, 5%);
+    color: #fff;
+    &:hover {
+      background-color: darken($primary-green, 5%);
+    }
+  }
+
+  // Downloads
+
+  .card-grid {
+    .card {
+      min-height: 23rem;
+      margin-bottom: 1rem;
+      position: relative;
+      text-align: center;
+      border-top-width: 8px;
+      padding-top: 25px;
+      .card-new-flag {
+      	text-transform: uppercase;
+      	font-weight: bold;
+      	background: #3587C9;
+      	text-align: center;
+      	color: #fff;
+      	font-size: 11px !important;
+      	padding: 6px 0 3px 0;
+      	border-radius: 2px 2px 0 0;
+      	border-top-left-radius: 2px;
+      	border-top-right-radius: 2px;
+      	border-bottom-right-radius: 0px;
+      	border-bottom-left-radius: 0px;
+      	position: absolute;
+      	top: -8px;
+      	right: 0;
+      	left: 0;
+        }
+        .card-text {
+          line-height: 1.5;
+          margin: 8px;
+        }
+      }
+      .product_cta {
+        position: absolute;
+        bottom: 0.5rem;
+        left:0.5rem;
+        right:0.5rem;
+      }
+    }
+
+}

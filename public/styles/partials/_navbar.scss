@@ -1,0 +1,47 @@
+/*
+ * Bootstrap expects you to have a collapsing navbar.
+ * This class removes that expectation, since in a collapsed state our navbar still works
+ * perfectly fine.
+ */
+
+nav.navbar-tw {
+  padding: 0;
+  border-bottom: 2px solid #EEEEEE;
+
+  .navbar-nav,
+  .navbar-brand,
+  .dropdown {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .dropdown {
+    margin-bottom: .4rem;
+  }
+
+  .navbar-brand {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .tw-dropdown-user-link {
+    margin-bottom: .9rem;
+  }
+
+  .navbar-nav a {
+    padding: 1.7rem 1rem 1rem 1rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+  .navbar-nav li.active {
+    background-color: #EEEEEE;
+  }
+
+  .navbar-brand {
+    padding-right: 1.2rem;
+    // margin-right: 1.4rem;
+    // border-right: solid 2px #EEEEEE;
+  }
+
+}

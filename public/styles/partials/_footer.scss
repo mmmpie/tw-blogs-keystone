@@ -1,0 +1,35 @@
+.site-footer {
+
+  color: #FFF;
+
+  section.design-labs {
+    background-color: #455A64;
+    padding: 2rem 0;
+    @include clearfix;
+  }
+
+  nav.site-footer-nav {
+    text-align: center;
+    background-color: #DCE2E6;
+    color: #263238;
+    padding: 0.4rem 0;
+
+    a {
+      color: #263238;
+    }
+  }
+
+  section.copyright {
+    padding: 1rem 0;
+    background-color: #37474F;
+
+    a { color: #fff; }
+
+    div.connect {
+      padding: 0 0 0.7rem 0;
+    }
+    div.copyright {
+      padding: 0;
+    }
+  }
+}

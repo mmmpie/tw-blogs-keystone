@@ -15,6 +15,7 @@
     "async": "2.1.4"
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
     "eslint": "3.15.0",
     "eslint-config-keystone": "3.0.0",
     "eslint-plugin-react": "^5.1.1"

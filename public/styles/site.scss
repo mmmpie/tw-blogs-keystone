@@ -1,22 +1,46 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
 // Bootstrap
 // =========
 
 // Bootstrap can be removed entirely by deleting this line.
 
-@import "bootstrap/bootstrap";
+@import './partials/bootstrap_variables';
+@import './node_modules/bootstrap/scss/bootstrap';
 
-// The easiest way to customise Bootstrap variables while
-// being able to easily override the source files with new
-// versions is to override the ones you want in another file.
-//
-// You can also add your own custom variables to this file for
-// use in your site stylesheets.
+@import './partials/_downloads';
+@import './partials/_jumbotron';
+@import './partials/_navbar';
+@import './partials/footer';
 
-@import "site/variables";
+body {
+  padding-top: 4.5rem;
+}
 
+main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+}
 
-// Site Styles
-// ===========
+main.nopad {
+  padding-top: 0;
+}
 
-// Add your own site style includes here
-@import "site/layout";
+.background-gradient-blue {
+  background: linear-gradient(15deg, #016A9C 0%, #02A3CB 50%) !important;
+}
+
+.background-blue {
+  background: #02A3CB;
+}
+
+.background-getty1 {
+  // background-image: url('getty-598310317-2560x650.jpg');
+  background: #D9E2F3 url('/assets/svg/getty-598310317-2560x650.jpg') 5% 50% no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+  font-weight: 300;
+}

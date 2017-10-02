@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-light navbar-tw fixed-top bg-white">
+  <div class="container">
+
+    <a href="/" class="navbar-brand">
+      <img
+        src="/images/toad.svg"
+        width="57"
+        height="48"
+        alt="Toad World"
+        class="d-inline-block align-top" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+			<ul class="navbar-nav mr-auto">
+				{{#each navLinks}}
+					<li class="nav-item {{#ifeq ../section key}}active{{/ifeq}}">
+						<a href="{{href}}" class="nav-link">
+							{{label}}
+						</a>
+					</li>
+				{{/each}}
+			</ul>
+
+      <form class="form-inline my-2 my-lg-0">
+				{{#if user}}
+					<button href="/keystone/signout" class="btn btn-secondary">Sign Out</button>
+				{{else}}
+					<button href="/keystone/signin" class="btn btn-secondary">Sign in</button>
+				{{/if}}
+      </form>
+    </div>
+
+  </div>
+
+</nav>

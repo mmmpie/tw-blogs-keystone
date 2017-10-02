@@ -1,21 +1,54 @@
 {{!< default}}
-<div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
-		<p>
-			It includes the latest versions of
-			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		</p>
-		<p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-		<hr>
-		<p>We have created a default Admin user for you with the email <strong>craig.bassett@quest.com</strong> and the password <strong>admin</strong>.</p>
-		<p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-		<hr>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
-	</div>
-</div>
+
+{{> "toolbar"}}
+
+<main id="site-main" role="main" class="container nopad">
+
+  {{!-- Hero
+        Loads a specific blob of content.
+  --}}
+  <div class="row">
+    <div class="col jumbotron jumbotron-fluid background-gradient-blue">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-6" >
+						<h4 class="display-4 text-white">It's a whole new Toad World!</h4>
+						<p class="lead text-white">
+							We’re not sure if you noticed, we’ve got some snazzy new digs here.
+							But don’t worry, you can still download our products and find
+							helpful content.
+						</p>
+						<hr class="my-4">
+						<p class="lead">
+							<a class="btn btn-dark btn-lg" href="/downloads" role="button">Download Products</a>
+						</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {{!-- Homepage Specific blob's --}}
+  <div class="card-deck mb-4">
+		{{#each data.products}}
+			<div class="card">
+				<img class="card-img-top" src="{{screenshot.image.url}}">
+				<div class="card-body">
+					<h4 class="card-title">{{title}}</h4>
+					<div class="card-text">
+						{{{screenshot.content.html}}}
+					</div>
+					{{!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --}}
+					<p class="card-text"><small class="text-muted">Last updated {{date updatedAt timeago="true"}}</small></p>
+				</div>
+			</div>
+		{{/each}}
+
+
+
+
+
+  </div>
+
+</main>

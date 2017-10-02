@@ -1,0 +1,30 @@
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "OpenSansRegular", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+//$font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+
+//
+// Color system
+//
+$green: #239C48;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$body-bg:       #f8f9f9;
+// $body-color:    #fff;
+
+
+// $primary-green: #239C48;
+// $primary-green-dark: darken($primary-green, 5%);
+// $primary-blue:  #016a9c;

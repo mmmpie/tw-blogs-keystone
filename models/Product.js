@@ -9,6 +9,7 @@ var Types = keystone.Field.Types;
 var Product = new keystone.List('Product', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
+	track: true
 });
 
 Product.add({
@@ -16,6 +17,7 @@ Product.add({
 	version: { type: String, required: false },
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'User', index: true },
+	featured: { type: Types.Boolean },
 	hero: {
 		image: { type: Types.CloudinaryImage },
 		content: { type: Types.Markdown, height: 150 }
