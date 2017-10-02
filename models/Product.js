@@ -13,7 +13,7 @@ var Product = new keystone.List('Product', {
 
 Product.add({
 	title: { type: String, required: true },
-	version: { type: Number, required: false },
+	version: { type: String, required: false },
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	hero: {
@@ -24,7 +24,8 @@ Product.add({
 		image: { type: Types.CloudinaryImage },
 		content: { type: Types.Markdown, height: 150 }
 	},
-	categories: { type: Types.Relationship, ref: 'ProductCategory', many: true },
+	platforms: { type: Types.Relationship, ref: 'Platform', many: true },
+	databases: { type: Types.Relationship, ref: 'Database', many: true }
 });
 
 Product.defaultColumns = 'title, version|20%, author|20%, publishedDate|20%';
