@@ -30,24 +30,24 @@
 	<div class="container">
 		<div class="row justify-content-md-center">
 			{{#moduloIf @index 2}}
-				<div class="col col-lg-6">
-					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}">
+				<div class="col col-md-6">
+					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}" width="100%">
 				</div>
-				<div class="col col-lg-6 vertical-center">
+				<div class="col col-md-6 vertical-center">
 					<div class="center-height">
 						<h4 class="display-4">{{title}}</h4>
 						{{{screenshot.content.html}}}
 					</div>
 				</div>
 			{{else}}
-				<div class="col col-lg-6 vertical-center">
+				<div class="col col-md-6 vertical-center">
 					<div class="center-height">
 						<h4 class="display-4">{{title}}</h4>
 						{{{screenshot.content.html}}}
 					</div>
 				</div>
-				<div class="col col-lg-6">
-					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}">
+				<div class="col col-md-6">
+					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}" width="100%">
 				</div>
 			{{/moduloIf}}
 		</div>
