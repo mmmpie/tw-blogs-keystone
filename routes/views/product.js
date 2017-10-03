@@ -21,7 +21,7 @@ exports = module.exports = function (req, res) {
 		});
 
 		q.exec(function (err, result) {
-			console.log('found product', result);
+			// console.log('found product', result);
 			locals.product = result;
 			next(err);
 		});
