@@ -1,0 +1,1632 @@
+{{!< default}}
+
+{{> "toolbar"}}
+
+<script>
+  $(document).ready(function() {
+    $('.product-filter .nav-link').on('click', function(e) {
+      e.preventDefault();
+      var filter = $(this).attr('data-filter')
+
+      filterList(filter);
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+    function filterList(value) {
+      var list = $('.product-list .product-item');
+      $(list).hide()
+      if(value == 'All') {
+        $('.product-list').find('.product-item').each(function(i){
+          $(this).show();
+        });
+      } else {
+        $('.product-list').find('div[data-category*=' + value + ']').each(function(i){
+          $(this).show();
+        });
+      }
+    }
+  });
+</script>
+
+<main id="site-main" role="main" class="page-downloads container">
+  <div class="row">
+    <div class="col">
+      <h3>Downloads</h3>
+      <p>Get fully functioning software free for 30-days or download freeware. Looking for upgrades? Go to <a href="https://support.quest.com/">support</a>.</p>
+      <div class="product-filters notranslate">
+        <ul class="nav product-filter">
+          <li class="nav-item nav-item-label"><span class="nav-link-label">Filter by</span></li>
+          <li class="nav-item"><a class="nav-link active" href="#" data-filter="All">All Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="a">Oracle</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="b">SQL Server</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="c">IBM DB2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="d">MySQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="e">NoSQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="f">PostgreSQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-filter="g">SAP</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row card-grid product-list">
+
+    <div class="product-item col-md-3" data-category="a">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad for Oracle</h4>
+                <p class="card-text">v12.11</p>
+
+                <p class="card-text">
+                    Save time, improve performance and reduce risks with the leading database development, administration and optimization software.
+
+                    <br><a href="https://www.toadworld.com/products/toad-for-oracle">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_oracle_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-for-oracle-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-for-oracle-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad for Oracle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/products/toad-for-oracle/software-downloads.aspx" id="download-tfo-experiment" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/43/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (32-bit)</a>
+                                    <a href="https://www.toadworld.com/m/freeware/544" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (64-bit)</a>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Unlimited users allowed per organization</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Unlimited concurrent connections</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Support for multiple Windows and Oracle releases</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Browse schema objects</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Create and maintain objects</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Write and maintain scripts and code in editor</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Create queries graphically</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Debug code</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Import/export data to/from data grid</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Generate reports</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-for-oracle">Toad for Oracle community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="d">
+        <div class="card">
+
+            <div class="card-body">
+                <span class="card-new-flag">New</span>
+                <h4 class="card-title notranslate">Toad Edge</h4>
+                <p class="card-text">(MySQL)</p>
+                <p class="card-text">v1.1</p>
+
+                <p class="card-text">
+                    Lightweight, flexible toolset for the development and management of MySQL databases.
+
+                    <br><a href="https://www.toadworld.com/products/toad-edge">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_edge_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-edge-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-edge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad Edge</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/111545" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/1657" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (Windows)</a>
+                                    <a href="https://www.toadworld.com/m/freeware/1656" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (MAC)</a>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Browse, navigate and manage database-specific objects like tables, views and users</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>SQL Editor</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Advanced code completion and SQL formatting</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Schema Compare and Synch</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>File System Synchronization</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Snapshot Creation</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Import/export data utilities</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-edge">Toad Edge community page</a>.</p>
+                    <p>Note: Installing Toad Edge Freeware will grant you a 30 day free full function Trial, which will then convert after 30 days to limited function Freeware. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="c">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad for IBM DB2</h4>
+                <p class="card-text">v6.3.0.269</p>
+
+                <p class="card-text">
+                    Develop and manage DB2 LUW & z/OS databases with less time and effort.
+
+                    <br><a href="https://www.toadworld.com/products/toad-for-ibm-db2">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_ibm_db2_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-for-ibm-db2-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-for-ibm-db2-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad for IBM DB2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/54941/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/549/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware</a>
+
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Create and manipulate database objects through graphical interface</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Explain Plan</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Search for database objects</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Histogram Tool</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Drag and drop automation engine</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Query Builder</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Visual SQL query plan</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Display session information and performance metrics</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Advanced, highly productive data grids offering simple column selectivity and grouping</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Generate customizable reports and charts based on output from SQL</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-for-ibm-db2">Toad for IBM DB2 community page</a>.</p>
+                    <p>Note: Installing Toad for IBM DB2 Freeware will grant you a 30 day free full function Trial, which will then convert after 30 days to limited function Freeware. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="b">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad for SQL Server</h4>
+                <p class="card-text">v6.8</p>
+
+                <p class="card-text">
+                    Maximize productivity for server administration, performance tuning, and development.
+
+                    <br><a href="https://www.toadworld.com/products/toad-for-sql-server">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_sql_server_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-for-sql-server-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-for-sql-server-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad for SQL Server</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/54726/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/550/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (64 bit)</a>
+                                    <a href="https://www.toadworld.com/m/freeware/1658" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (32 bit)</a>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Browse, navigate and manage database-specific objects like tables, views and roles</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Edit: snippets, predictive typing, syntax highlighting</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Advanced code completion and SQL formatting</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Execute scripts against multiple servers and instances.</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Query Builder</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Trace user sessions and visually display SQL Trace output</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Identify problematic SQL directly from database objects, files and source code</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Compare data between two databases, identify differences and run or generate a script to synchronize.</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Import/export data utilities</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Automate report generation and distribution</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-for-sql-server">Toad for SQL Server community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a b c d e f g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad Data Point</h4>
+                <p class="card-text">v4.2.1</p>
+
+                <p class="card-text">
+                    Powerful multi-platform querying, data preparation and reporting from a single console.
+
+                    <br><a href="https://www.toadworld.com/products/toad-data-point">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.quest.com/register/54955/" id="toad_data_point_btn" class="btn btn-primary trial-link">Get Free Trial</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a b c d e f g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad Data Point Viewer</h4>
+                <p class="card-text">v3.7.2</p>
+
+                <p class="card-text">
+                    View files created with Toad Data Point.
+
+                    <br><a href="https://www.toadworld.com/products/toad-data-point">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/1507/" id="toad_data_point_viewer_btn" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a b c d e g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad Intelligence Central</h4>
+                <p class="card-text">v3.3.1</p>
+
+                <p class="card-text">
+                    Simplified file sharing, atuomation and data provisioning across data analyst teams.
+
+                    <br><a href="https://www.toadworld.com/products/toad-intelligence-central">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-intelligence-central-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-intelligence-central-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad Intelligence Central</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/68650/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/1566/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware</a>
+
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Publish Toad files to Toad Intelligence Central</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Consume Toad files from Toad Intelligence Central</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Use relational data sources</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Use NoSQL data sources</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Use files (delimited text, Excel, Access) as data sources</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Use business intelligence data sources</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>24x7 automation</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Save to Excel for reporting</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Allow ODBC access to published data sets, snapshots, and views</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Active Directory and Single sign-on support</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-intelligence-central">Toad Intelligence Central community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a b c d f g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad Data Modeler</h4>
+                <p class="card-text">v6.2</p>
+
+                <p class="card-text">
+                    Easy-to-use, comprehensive cross-platform database modeling software.
+
+                    <br><a href="https://www.toadworld.com/products/toad-data-modeler">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_data_modeler_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-data-modeler-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-data-modeler-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad Data Modeler</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/54826/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/553/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (32-bit)</a>
+                                    <a href="https://www.toadworld.com/m/freeware/1613" class="btn btn-secondary btn-sm freeware-link">Limited Freeware (64-bit)</a>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Database specific items creation and management (procedures, triggers, functions, sequences…)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Model Verification</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Ordering of objects for SQL code generation</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Reverse Engineering from Database or SQL script</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Graphical User Interface</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Logical, Universal, and Physical ER Diagrams</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Model Update (Physical from database)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Generation of Change Scripts</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>SQL Preview (table, index, relationship, procedure etc.)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Export/Import to Excel or CSV</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-data-modeler">Toad Data Modeler community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a b c d g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Benchmark Factory for Databases</h4>
+                <p class="card-text">v7.6.1</p>
+
+                <p class="card-text">
+                    Database performance testing tool that allows you to conduct database workload replay, industry-standard benchmark testing, and scalability testing.
+
+                    <br><a href="https://www.toadworld.com/products/benchmark-factory">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="benchmark_factory_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#benchmark-factory-for-databases-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="benchmark-factory-for-databases-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Benchmark Factory for Databases</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/54678/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/555/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware</a>
+
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Default maximum virtual user load of 100 (Freeware: 20)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>SQL Optimizer Integration</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Transactions can be run during a load test/user scenario</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Scaling factors for standard benchmarks (AS3AP, TPC-B, TPC-C, TPC-D, and Scalable Hardware)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Repositories supported (Oracle, Microsoft SQL Server, Adaptive Server Anywhere (ASA), SQLite, and MySQL)</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" />
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Supported</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/benchmark-factory">Benchmark Factory for Databases community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="g">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad for SAP Solutions</h4>
+                <p class="card-text">v3.2</p>
+
+                <p class="card-text">
+                    Simplify database development and administration on SAP databases.
+
+                    <br><a href="https://www.toadworld.com/products/toad-for-sap-solutions">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_sap_btn" class="btn btn-primary btn-small" data-toggle="modal" data-target="#toad-for-sap-solutions-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-for-sap-solutions-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad for SAP Solutions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Free Trial</h5>
+                                <p>Fully functioning version
+                                    <br> free for 30 days</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.quest.com/register/55632/" class="btn btn-primary btn-sm trial-link">Get Free Trial</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Freeware</h5>
+                                <p>Limited functionality</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/551/" class="btn btn-secondary btn-sm freeware-link">Limited Freeware</a>
+
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Advanced, customizable GUI Options</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Create and Execute Queries</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Manage database objects and data</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Comprehensive Data Export and Import</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Automate routine tasks</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Compare and Synchronize Data</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>View differences between result sets</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Automate report generation</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Generate high-quality database object diagrams</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr class="matrix-features">
+                            <td>Manage project objects, files and code</td>
+                            <td class="free-trial-column">
+                                <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" />
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+
+                    <p><small><img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_ico.png" alt=""> means full feature. <img src="https://www.toadworld.com/cfs-file/__key/widgetcontainerfiles/678c14fc6c7c42c4afdbadab9b68ae0a-s-AAAAAAAAAAAAAAAAAAAAAA-page-0downloads/oval_5F00_hollow_5F00_ico.png" alt=""> means limited feature.</small></p>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-for-sap-solutions">Toad for SAP Solutions community page</a>.</p>
+                    <p>Note: Installing Toad for SAP Solutions Freeware will grant you a 30 day free full function Trial, which will then convert after 30 days to limited function Freeware. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="e">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad for Hadoop</h4>
+                <p class="card-text">v1.5.3</p>
+
+                <p class="card-text">
+                    Easily understand and query Hadoop through a simple-to-use interface.
+
+                    <br><a href="https://www.toadworld.com/products/toad-for-hadoop">Learn More</a>
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="#" id="toad_for_hadoop_btn" class="btn btn-secondary btn-small" data-toggle="modal" data-target="#toad-hadoop-modal">Select</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="toad-hadoop-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title notranslate">Toad for Hadoop Freeware</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm feature-matrix">
+                        <tr class="matrix-header">
+                            <th class="title-cell">&nbsp;</th>
+                            <th class="free-trial-column" style="width:28%;">
+                                <h5>Download Windows Freeware</h5>
+                                <p>Freeware version
+                                    <br> for Windows</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/1496" class="btn btn-primary btn-sm trial-link">Get Windows Freeware</a>
+                                </div>
+                            </th>
+                            <th style="width:28%;">
+                                <h5>Download OS X Freeware</h5>
+                                <p>Freeware version
+                                    <br> for OS X</p>
+                                <div class="matrix-cta">
+                                    <a href="https://www.toadworld.com/m/freeware/1609/" class="btn btn-primary btn-sm trial-link">Get OS X Freeware</a>
+                                </div>
+                            </th>
+                        </tr>
+
+                    </table>
+
+                    <hr>
+                    <p>For more information visit the <a href="https://www.toadworld.com/products/toad-for-hadoop">Toad for Hadoop community page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Backup Reporter for Oracle</h4>
+                <p class="card-text">v2.0.2.68</p>
+
+                <p class="card-text">
+                    Reporting and analysis dashboard for Oracle.
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/1603/" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Oracle E-Business Suite Reports</h4>
+                <p class="card-text">v1.0</p>
+
+                <p class="card-text">
+                    Oracle E-Business Suite (OEBS) application management.
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/561/" id="toad_backup_reporter_btn" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">SegScan</h4>
+                <p class="card-text"></p>
+
+                <p class="card-text">
+                    Determine how much space could be potentially reclaimed from an Oracle database.
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/1610/" id="seg_scan_btn" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a c d">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">SQL Monitor</h4>
+                <p class="card-text">v1.0</p>
+
+                <p class="card-text">
+                    Capture all SQL calls a program sends to the database via the client DLLs.
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/558/" di="toad_sql_monitor_btn" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-item col-md-3" data-category="a">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title notranslate">Toad Group Policy Manager</h4>
+                <p class="card-text">v1.0</p>
+
+                <p class="card-text">
+                    Share Toad for Oracle options or feature restrictions within an organization.
+
+                </p>
+
+                <div class="product_cta btn-group-vertical">
+
+                    <a href="https://www.toadworld.com/m/freeware/557/" id="toad_policy_mgr_btn" class="btn btn-secondary freeware-link">Get Freeware</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+</main>

@@ -75,7 +75,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #f8f9f9; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -416,7 +416,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
@@ -922,7 +922,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #e9ecef; }
   .table .table {
-    background-color: #f8f9f9; }
+    background-color: #fff; }
 
 .table-sm th,
 .table-sm td {
@@ -1043,7 +1043,7 @@ pre {
     background-color: rgba(0, 0, 0, 0.075); }
 
 .thead-inverse th {
-  color: #f8f9f9;
+  color: #fff;
   background-color: #212529; }
 
 .thead-default th {
@@ -1051,7 +1051,7 @@ pre {
   background-color: #e9ecef; }
 
 .table-inverse {
-  color: #f8f9f9;
+  color: #fff;
   background-color: #212529; }
   .table-inverse th,
   .table-inverse td,
@@ -2100,7 +2100,7 @@ tbody.collapse.show {
     color: #fff;
     background-color: #007bff; }
   .custom-control-input:focus ~ .custom-control-indicator {
-    box-shadow: 0 0 0 1px #f8f9f9, 0 0 0 3px #007bff; }
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #007bff; }
   .custom-control-input:active ~ .custom-control-indicator {
     color: #fff;
     background-color: #b3d7ff; }
@@ -2261,8 +2261,8 @@ tbody.collapse.show {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #f8f9f9;
-    border-color: #ddd #ddd #f8f9f9; }
+    background-color: #fff;
+    border-color: #ddd #ddd #fff; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -5714,6 +5714,9 @@ nav.navbar-tw {
     .site-footer section.copyright div.copyright {
       padding: 0; }
 
+.db-platforms img {
+  margin: 1rem; }
+
 body {
   padding-top: 4.5rem; }
 
@@ -5741,7 +5744,7 @@ main.nopad {
   background: #455A64; }
 
 .background-getty1 {
-  background: #D9E2F3 url("/assets/svg/getty-598310317-2560x650.jpg") 5% 50% no-repeat; }
+  background: #D9E2F3 url("/images/getty-598310317-2560x650.jpg") 5% 50% no-repeat; }
 
 .vertical-center {
   display: flex;

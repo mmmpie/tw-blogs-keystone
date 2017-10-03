@@ -13,6 +13,7 @@
 @import './partials/_jumbotron';
 @import './partials/_navbar';
 @import './partials/footer';
+@import './partials/layout';
 
 body {
   padding-top: 4.5rem;
@@ -49,7 +50,7 @@ main.nopad {
 }
 
 .background-getty1 {
-  background: #D9E2F3 url('/assets/svg/getty-598310317-2560x650.jpg') 5% 50% no-repeat;
+  background: #D9E2F3 url('/images/getty-598310317-2560x650.jpg') 5% 50% no-repeat;
 }
 
 .vertical-center {

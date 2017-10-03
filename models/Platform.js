@@ -7,10 +7,11 @@ var keystone = require('keystone');
 
 var Platform = new keystone.List('Platform', {
 	autokey: { from: 'name', path: 'key', unique: true },
+	track: true
 });
 
 Platform.add({
-	name: { type: String, required: true },
+	name: { type: String, required: true }
 });
 
 Platform.relationship({ ref: 'Product', path: 'products', refPath: 'platforms' });

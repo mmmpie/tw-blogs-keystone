@@ -331,10 +331,11 @@ module.exports = function () {
    *
    * @param  {mixed}  num    The dividend
    * @param  {mixed}  mod    The divisor
+	 * @param  {mixed}  val    The expected val
    * @param  {html}   block  html block to evaluate if true
    */
-  _helpers.moduloIf = function(num, mod, block) {
-    if (parseInt(num) % parseInt(mod) === 0) {
+  _helpers.moduloIf = function(num, mod, val, block) {
+    if (parseInt(num) % parseInt(mod) === parseInt(val)) {
       return block.fn(this);
     } else {
 			return block.inverse(this);

@@ -1,0 +1,72 @@
+{{!< default}}
+
+{{> "toolbar"}}
+
+<div class="jumbotron jumbotron-fluid background-getty1 mb-0">
+	<div class="container">
+		<div class="row justify-content-start">
+			<div class="col-md-4 hero-content">
+				<h1 class="display-4">Database excellence</h1>
+				<p class="lead">Trusted by database experts for over 10 years</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Download FREE Trial</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid background-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 class="display-4 text-white">Deliver superior data solutions with Toad</h2>
+				<p class="lead text-white">Toad Software is a database management toolset from Quest that database developers, database administrators and data analysts use to manage both relational and non-relational databases using SQL.</p>
+			</div>
+			<div class="col-lg-4 text-center">
+				<h2 class="display-1 text-white">40%</h2>
+				<p class="small text-white">Increase your database development process speed by up to 40% and become truly agile</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	{{#each data.products}}
+
+		{{#moduloIf @index 3 0}}
+		<div class="row">
+			<div class="card-deck mb-5">
+		{{/moduloIf}}
+				<div class="card">
+					<img class="card-img-top" src="{{screenshot.image.url}}" width="100%">
+					<div class="card-body">
+						<h4 class="card-title">{{title}}</h4>
+						{{{screenshot.content.html}}}
+						<a href="/downloads" class="btn btn-dark">TRY</a>
+						<a href="/products/product/{{slug}}">Learn More</a>
+					</div>
+				</div>
+		{{#moduloIf @index 3 4}}
+			</div>
+		</div>
+		{{else}}
+			{{#if @last}}
+					</div>
+				</div>
+			{{/if}}
+		{{/moduloIf}}
+
+	{{/each}}
+</div>
+
+<div class="jumbotron jumbotron-fluid db-platforms background-cyan mb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<h4 class="display-5">Platforms</h4>
+				{{#each data.dbPlatforms}}
+				<img src="{{sprite.url}}" width="{{sprite.width}}" height="{{sprite.height}}">
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

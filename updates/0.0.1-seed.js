@@ -13,11 +13,104 @@ exports.create = {
 	],
 
 	Database: [
-		{ name: 'MySQL', __ref: 'mysql' },
-		{ name: 'MSSQL' },
-		{ name: 'Mongo' },
-		{ name: 'Maria' },
-		{ name: 'Postgres' }
+		{
+			name: 'IBM DB2', __ref: 'db2',
+			sprite: {
+				public_id: 'effn0qsnuhehagecyqi0',
+				version: 1507045863,
+				signature: 'd50dcbefc49a6b6fcf1d9c051c7c741fb13dd3c8',
+				width: 211,
+				height: 105,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045863/effn0qsnuhehagecyqi0.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045863/effn0qsnuhehagecyqi0.png'
+			}
+		},
+		{
+			name: 'MSSQL', __ref: 'mssql',
+			sprite: {
+				public_id: 'uwnhb8uftcz6ernuadmw',
+				version: 1507045749,
+				signature: '97347eb69226deb79931d1ca712d2affb4f9d14a',
+				width: 211,
+				height: 105,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045749/uwnhb8uftcz6ernuadmw.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045749/uwnhb8uftcz6ernuadmw.png'
+			}
+		},
+		{
+			name: 'MySQL', __ref: 'mysql',
+			sprite: {
+				public_id: 'risd4cctknzcxceaslhg',
+				version: 1507045873,
+				signature: '86415e0c9b04912fe6bdd6ce16818d04c1823a7b',
+				width: 211,
+				height: 105,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045873/risd4cctknzcxceaslhg.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045873/risd4cctknzcxceaslhg.png'
+			}
+		},
+		{
+			name: 'NoSQL', __ref: 'nosql',
+			sprite: {
+				public_id: 'ewv8ijprshmism5ad3cl',
+				version: 1507045881,
+				signature: 'c545607d5c1274c6111ee4ba98b532af29fe6b6b',
+				width: 211,
+				height: 105,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045881/ewv8ijprshmism5ad3cl.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045881/ewv8ijprshmism5ad3cl.png'
+			}
+		},
+		{
+			name: 'Oracle', __ref: 'oracle',
+			sprite: {
+				public_id: 'j7r7jpqehdjcyvg4ulm1',
+				version: 1507045889,
+				signature: 'ae4202a7901a637845daefcbb35a7ace7990c025',
+				width: 211,
+				height: 105,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045889/j7r7jpqehdjcyvg4ulm1.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045889/j7r7jpqehdjcyvg4ulm1.png'
+			}
+		},
+		{
+			name: 'Postgres', __ref: 'postgres',
+			sprite: {
+				public_id: 'kbzwczburz67w0cagvin',
+				version: 1507045897,
+				signature: '3f0c43972278ecb85fe27f1754c21dae7528d708',
+				width: 140,
+				height: 130,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045897/kbzwczburz67w0cagvin.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045897/kbzwczburz67w0cagvin.png'
+			}
+		},
+		{
+			name: 'SAP', __ref: 'sap',
+			sprite: {
+				public_id: 'y6dezwrgkjooucxxkyt7',
+				version: 1507045904,
+				signature: 'd24599082f2ce45b5b0869dffe8b7d9d425af2ed',
+				width: 249,
+				height: 115,
+				format: 'png',
+				resource_type: 'image',
+				url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1507045904/y6dezwrgkjooucxxkyt7.png',
+				secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1507045904/y6dezwrgkjooucxxkyt7.png'
+			}
+		}
 	],
 
 	Platform: [
@@ -25,6 +118,12 @@ exports.create = {
 		{ name: 'MacOS', __ref: 'macos' },
 		{ name: 'Linux' },
 		{ name: 'Other' }
+	],
+
+	Role: [
+		{ name: 'Developers', __ref: 'developers' },
+		{ name: 'Administrators', __ref: 'administrators' },
+		{ name: 'Analysts', __ref: 'analysts' },
 	],
 
 	Product: [
@@ -107,7 +206,7 @@ exports.create = {
 				'windows', 'macos'
 			],
 			databases: [
-				'mysql'
+				'oracle'
 			]
 		},
 		{
@@ -115,7 +214,7 @@ exports.create = {
 			version: '1.0.1',
 			state: 'published',
 			author: 'admin',
-			featured: true,
+			featured: false,
 			hero: {
 				image: {
 					public_id: 'h0jy4gw7xhaipuanctsz',
@@ -148,7 +247,7 @@ exports.create = {
 				'windows', 'macos'
 			],
 			databases: [
-				'mysql'
+				'db2'
 			]
 		}
 	]

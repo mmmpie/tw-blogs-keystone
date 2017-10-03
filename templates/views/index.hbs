@@ -8,7 +8,7 @@
 <div class="jumbotron jumbotron-fluid background-gradient-blue mb-0">
 	<div class="container">
 		<div class="row justify-content-md-center">
-			<div class="col col-lg-8" >
+			<div class="col col-lg-12" >
 				<h4 class="display-3 text-white">It's a whole new Toad World!</h4>
 				<p class="lead text-white">
 					We’re not sure if you noticed, we’ve got some snazzy new digs here.
@@ -26,10 +26,10 @@
 
 {{!-- Homepage Specific blob's --}}
 {{#each data.products}}
-<div class="jumbotron jumbotron-fluid mb-0 {{#moduloIf @index 2}}background-white{{else}}background-cyan{{/moduloIf}}">
+<div class="jumbotron jumbotron-fluid mb-0 {{#moduloIf @index 2 0}}background-white{{else}}background-cyan{{/moduloIf}}">
 	<div class="container">
 		<div class="row justify-content-md-center">
-			{{#moduloIf @index 2}}
+			{{#moduloIf @index 2 0}}
 				<div class="col col-md-6">
 					<img class="card-img-leftcard-img-right" src="{{screenshot.image.url}}" width="100%">
 				</div>
