@@ -38,9 +38,9 @@ exports = module.exports = function (app) {
 	app.get('/downloads', routes.views.downloads);
 	app.get('/products', routes.views.products);
 	app.get('/products/product/:product', routes.views.product);
-	app.get('/insights', routes.views.insights);
-	app.get('/blog/:category?', routes.views.blog);
-	app.get('/blog/post/:post', routes.views.post);
+	// app.get('/insights', routes.views.insights);
+	app.get('/insights/:category?', routes.views.blog);
+	app.get('/insights/post/:post', routes.views.post);
 	app.get('/community', routes.views.community);
 	app.all('/contact', routes.views.contact);
 

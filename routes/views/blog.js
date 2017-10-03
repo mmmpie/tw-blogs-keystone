@@ -7,7 +7,7 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Init locals
-	locals.section = 'blog';
+	locals.section = 'insights';
 	locals.filters = {
 		category: req.params.category,
 	};
@@ -73,6 +73,7 @@ exports = module.exports = function (req, res) {
 		}
 
 		q.exec(function (err, results) {
+			console.log('posts', results);
 			locals.data.posts = results;
 			next(err);
 		});
