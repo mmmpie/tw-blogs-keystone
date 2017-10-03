@@ -10,9 +10,7 @@ exports = module.exports = function (req, res) {
 	locals.filters = {
 		product: req.params.product,
 	};
-	locals.data = {
-		product: [],
-	};
+	locals.product = {};
 
 	// Load the current product
 	view.on('init', function (next) {
@@ -23,7 +21,8 @@ exports = module.exports = function (req, res) {
 		});
 
 		q.exec(function (err, result) {
-			locals.data.product = result;
+			console.log('found product', result);
+			locals.product = result;
 			next(err);
 		});
 

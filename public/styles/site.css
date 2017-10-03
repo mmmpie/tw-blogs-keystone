@@ -5662,6 +5662,11 @@ a.text-dark:focus, a.text-dark:hover {
   left: 0.5rem;
   right: 0.5rem; }
 
+.jumbotron {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 140%; }
+
 .jumbotron .hero-content {
   background: rgba(255, 255, 255, 0.8);
   padding: 25px; }
@@ -5726,7 +5731,8 @@ main {
   background-color: #fff; }
 
 main.nopad {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .background-white {
   background: #fff; }
@@ -5744,7 +5750,7 @@ main.nopad {
   background: #455A64; }
 
 .background-getty1 {
-  background: #D9E2F3 url("/images/getty-598310317-2560x650.jpg") 5% 50% no-repeat; }
+  background-image: url("/images/getty-598310317-2560x650.jpg"); }
 
 .vertical-center {
   display: flex;

@@ -1,0 +1,74 @@
+{{!< default}}
+
+{{> "toolbar"}}
+
+<main class="nopad">
+
+	<div class="jumbotron jumbotron-fluid mb-0" style="background-image: url({{product.hero.image.url}});">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-md-4 hero-content">
+					<h1 class="display-4">{{product.title}}</h1>
+					<p class="lead">{{{product.screenshot.content.html}}}</p>
+					<p><a class="btn btn-primary btn-lg" href="#" role="button">Download FREE Trial</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid background-white mb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-8">
+					<img class="" src="{{product.screenshot.image.url}}" width="100%">
+				</div>
+				<div class="col-4">
+					{{{product.hero.content.html}}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid mb-0 background-cyan">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img class="" src="{{product.screenshot.image.url}}" width="100%">
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col">
+					<h4>Object and user management</h4>
+					<p>Enables easy management and editing of database objects and management of user privileges.</p>
+				</div>
+				<div class="col">
+					<h4>SQL Worksheet</h4>
+					<p>Provides an environment for writing complex SQL code using Worksheet with Content Assist for faster, more streamlines development.</p>
+				</div>
+				<div class="col">
+					<h4>Import / Export Data</h4>
+					<p>Quickly imports data to tables from SQL files, CSV files or ZIP archives. Easily exports data from tables with options.</p>
+				</div>
+				<div class="col">
+					<h4>Compare and Sync</h4>
+					<p>Compares and synchronizes databases, generates change scripts for target and source databases, saves results and exports scripts to SQL Worksheet.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid background-blue mb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="display-4 text-white">" Here's what our customers say "</h2>
+					<blockquote class="blockquote text-center text-white">
+						<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<footer class="blockquote-footer text-white">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>

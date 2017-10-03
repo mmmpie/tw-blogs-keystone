@@ -145,7 +145,7 @@ exports.create = {
 					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg',
 					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg'
 				},
-				content: '# Title\nSome nifty content.'
+				content: '# Simplify complexity and drive performance\nToday\'s database technology is becoming increasingly complex, and supports previously unthinkable data volumes. This drives organizations to spend up to 75% of their time keeping the lights on, leaving little time to deliver innovations that move the business.'
 			},
 			screenshot: {
 				image: {
@@ -186,7 +186,7 @@ exports.create = {
 					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg',
 					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg'
 				},
-				content: '# Title\nSome nifty content.'
+				content: '# Simplify complexity and drive performance\nToday\'s database technology is becoming increasingly complex, and supports previously unthinkable data volumes. This drives organizations to spend up to 75% of their time keeping the lights on, leaving little time to deliver innovations that move the business.'
 			},
 			screenshot: {
 				image: {
@@ -227,7 +227,7 @@ exports.create = {
 					url: 'http://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg',
 					secure_url: 'https://res.cloudinary.com/keystone-demo/image/upload/v1506966158/h0jy4gw7xhaipuanctsz.jpg'
 				},
-				content: '# Title\nSome nifty content.'
+				content: '# Simplify complexity and drive performance\nToday\'s database technology is becoming increasingly complex, and supports previously unthinkable data volumes. This drives organizations to spend up to 75% of their time keeping the lights on, leaving little time to deliver innovations that move the business.'
 			},
 			screenshot: {
 				image: {

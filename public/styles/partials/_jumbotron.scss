@@ -5,6 +5,12 @@
 
 // 016a9c 0%, #02a3cb 100%);
 
+.jumbotron {
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: auto 140%;
+}
+
 .jumbotron .hero-content {
   // max-width: 36%;
   background: rgba(255, 255, 255, 0.8);

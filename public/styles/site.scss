@@ -26,7 +26,8 @@ main {
 }
 
 main.nopad {
-  padding-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .background-white {
@@ -50,7 +51,7 @@ main.nopad {
 }
 
 .background-getty1 {
-  background: #D9E2F3 url('/images/getty-598310317-2560x650.jpg') 5% 50% no-repeat;
+  background-image: url('/images/getty-598310317-2560x650.jpg');
 }
 
 .vertical-center {
